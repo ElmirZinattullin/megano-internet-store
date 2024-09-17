@@ -3,7 +3,6 @@
 
 ## Как установить
 
-p
 
 Настройка переменных окружения
 1. Скопируйте файл .env.dist в .env
@@ -44,6 +43,12 @@ celery -A config beat -l INFO
 
 celery -A config flower --loglevel=INFO
 ```
+Создание миграций и активация
+```shell
+python manage.py makemigrations
+python manage.py migrate
+```
+
 ### Как удалить контейнеры
 СУБД Postgres
 ```shell
