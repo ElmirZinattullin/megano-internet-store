@@ -44,6 +44,12 @@ celery -A config beat -l INFO
 
 celery -A config flower --loglevel=INFO
 ```
+Создание миграций и активация
+```shell
+python manage.py makemigrations
+python manage.py migrate
+```
+
 ### Как удалить контейнеры
 СУБД Postgres
 ```shell
